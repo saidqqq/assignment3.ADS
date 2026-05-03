@@ -1,6 +1,8 @@
+package tasks;
+
 import java.util.Scanner;
 
-public class task3 {
+public class MedianOfElements {
     public static void run() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Finding Median.");

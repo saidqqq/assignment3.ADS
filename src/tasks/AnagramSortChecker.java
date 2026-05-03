@@ -1,6 +1,8 @@
+package tasks;
+
 import java.util.Scanner;
 
-public class task1 {
+public class AnagramSortChecker {
     public static void run(){
         Scanner sc = new Scanner(System.in);
 

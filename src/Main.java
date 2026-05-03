@@ -1,3 +1,8 @@
+import tasks.AnagramSortChecker;
+import tasks.KthSmallestElementSearch;
+import tasks.MedianOfElements;
+import tasks.OptimalShippingCapacitySearch;
+
 import java.util.Scanner;
 
 public class Main {
@@ -14,16 +19,16 @@ public class Main {
             choice = scanner.nextInt();
             switch (choice) {
                 case 1:
-                    task1.run();
+                    AnagramSortChecker.run();
                     break;
                 case 2:
-                    task2.run();
+                    KthSmallestElementSearch.run();
                     break;
                 case 3:
-                    task3.run();
+                    MedianOfElements.run();
                     break;
                 case 4:
-                    task4.run();
+                    OptimalShippingCapacitySearch.run();
                     break;
                 default:
                     System.out.println("Wrong choice");}

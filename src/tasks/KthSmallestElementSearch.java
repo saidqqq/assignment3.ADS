@@ -1,6 +1,8 @@
+package tasks;
+
 import java.util.Scanner;
 
-public class task2 {
+public class KthSmallestElementSearch {
     public static void run() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Search kth smallest element.");

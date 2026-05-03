@@ -1,6 +1,8 @@
+package tasks;
+
 import java.util.Scanner;
 
-public class task4 {
+public class OptimalShippingCapacitySearch {
     public static void run() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number of packages: ");
