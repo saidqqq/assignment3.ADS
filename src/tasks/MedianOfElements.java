@@ -39,33 +39,33 @@ public class MedianOfElements {
         int left = mid - low + 1;
         int right = high - mid;
 
-        int[] L = new int[left];
-        int[] R = new int[right];
+        int[] Left = new int[left];
+        int[] Right = new int[right];
         for (int i = 0; i < left; i++) {
-            L[i] = a[low + i];
+            Left[i] = a[low + i];
         }
         for (int j = 0; j < right; j++) {
-            R[j] = a[mid + 1 + j];
+            Right[j] = a[mid + 1 + j];
         }
 
-        int i = 0; int j = 0; int k = low;
+        int i = 0; int j = 0; int mergeIndex = low;
         while (i < left && j < right ) {
-            if (L[i] <= R[j]) {
-                a[k] = L[i];
+            if (Left[i] <= Right[j]) {
+                a[mergeIndex] = Left[i];
                 i++;
             } else {
-                a[k] = R[j];
+                a[mergeIndex] = Right[j];
                 j++;
             }
-            k++;
+            mergeIndex++;
         }
         while (i < left) {
-            a[k] = L[i];
-            i++; k++;
+            a[mergeIndex] = Left[i];
+            i++; mergeIndex++;
         }
         while (j < right) {
-            a[k] = R[j];
-            j++; k++;
+            a[mergeIndex] = Right[j];
+            j++; mergeIndex++;
         }
     }
 }
